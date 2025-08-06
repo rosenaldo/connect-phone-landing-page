@@ -1,332 +1,417 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-    <!--=============== REMIX ICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== CSS ===============-->
+    <title>ConnectPhone - Assistência Técnica Especializada em Smartphones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>ConnectPhone</title>
 </head>
 
 <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="assets/img/logo.png" alt="">
+    <!-- Efeito de Partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo animate__animated animate__fadeInDown">
+                <i class="fas fa-mobile-alt logo-icon"></i>Connect<span>Phone</span>
             </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Inicio</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#specs" class="nav__link">Serviços</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#case" class="nav__link">Casos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#products" class="nav__link">.....</a>
-                    </li>
+            <nav>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#services"><i class="fas fa-tools"></i> Serviços</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-star"></i> Avaliações</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contato</a></li>
                 </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div>
-                    <img src="assets/img/home.png" alt="" class="home__img">
-                </div>
-
-                <div class="home__data">
-                    <div class="home__header">
-                        <h1 class="home__title">Eficiência</h1>
-                        <h2 class="home__subtitle">Agilidade</h2>
-                    </div>
-
-                    <div class="home__footer">
-                        <h3 class="home__title-description">Visão geral</h3>
-                        <p class="home__description">Nossa missão é proporcionar aos nossos clientes uma experiência de
-                            serviço técnico excepcional, com soluções rápidas, eficazes e confiáveis para todos os
-                            problemas relacionados a dispositivos móveis. Priorizamos a satisfação e a confiança dos
-                            nossos clientes, estabelecendo um relacionamento duradouro com base na qualidade e na
-                            excelência do nosso atendimento.
-                        </p>
-                        <!-- <a href="#" class="button button--flex">
-                            <span class="button--flex">
-                                <i class="ri-shopping-bag-line button__icon"></i></i> Adicionar a sacola
-                            </span>
-                            <span class="home__price">$299</span>
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== SPONSOR ===============-->
-        <section class="sponsor section">
-            <div class="sponsor__container container grid">
-                <img src="assets/img/sponsor1.png" alt="" class="sponsor__img">
-                <img src="assets/img/sponsor2.png" alt="" class="sponsor__img">
-                <img src="assets/img/sponsor3.png" alt="" class="sponsor__img">
-                <img src="assets/img/sponsor4.png" alt="" class="sponsor__img">
-            </div>
-        </section>
-
-        <!--=============== SPECS ===============-->
-        <section class="specs section grid" id="specs">
-            <h2 class="section__title section__title-gradient">Especificações</h2>
-
-            <div class="specs__container container grid">
-                <div class="specs__content grid">
-                    <div class="specs__data">
-                        
-                        <h3 class="specs__title">Tela</h3>
-                        <span class="specs__subtitle">Substitui telas quebradas, rachadas ou danificadas.
-                            Correção de Problemas de Toque: Ajusta ou substitui componentes que afetam a sensibilidade ao toque.
-                        </span>
-                    </div>
-
-                    <div class="specs__data">
-                        <!-- <i class="ri-battery-charge-line specs__icon"></i> -->
-                        <h3 class="specs__title">Bateria</h3>
-                        <span class="specs__subtitle">Verifica a capacidade e saúde da bateria.
-                            Substituição de Bateria: Troca baterias desgastadas ou defeituosas.
-                            Conserto de Circuitos de Carregamento: Repara portas de carregamento ou circuitos que possam estar causando problemas na carga da bateria.</span>
-                    </div>
-
-                    <div class="specs__data">
-                        <h3 class="specs__title">Botões e Conectores</h3>
-                        <span class="specs__subtitle">substitui botões de volume, energia ou home que não estão funcionando.
-                            Reparo de Conectores: Conserta portas USB, jacks de fones de ouvido ou outros conectores danificados.</span>
-                    </div>
-
-                    <div class="specs__data">
-                        <h3 class="specs__title">Placa</h3>
-                        <span class="specs__subtitle">Verifica a integridade da placa mãe e identificar falhas em componentes soldados.
-                            Reparo de Circuitos: Conserta trilhas danificadas e substitui componentes eletrônicos defeituosos, como resistores, capacitores, transistores e ICs (circuitos integrados). <br>Reparo de Conexões e Soldas: Refazer soldas frias ou quebradas que podem causar mau funcionamento.</span>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/img/specs.png" alt="" class="specs__img">
-                </div>
-            </div>
-        </section>
-
-        <!--=============== CASE ===============-->
-        <section class="case section grid" id="case">
-            <h2 class="section__title section__title-gradient">Caso</h2>
-
-            <div class="case__container container grid">
-                <div>
-                    <img src="assets/img/case.png" alt="" class="case__img">
-                </div>
-
-                <div class="case__data">
-                    <p class="case__description">Na ConnectPhone recebemos vários aparelhos enfrentando diverssos problemas como queda significativa, 
-                        resultando em uma tela completamente trincada, além de problemas de desempenho e uma
-                         bateria que não dura mais do que algumas horas.                         
-                    </p>
-                    <a href="#" class="button button--flex">
-                        <i class="ri-information-line button__icon"></i> 
-                        Mais informações
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== DISCOUNT ===============-->
-        <section class="discount section">
-            <div class="discount__container container grid">
-                <div class="discount__animate">
-                    <h2 class="discount__title">Tecnologia de Ponta, Serviço de Primeira <br> Sua Satisfação é Nossa Prioridade</h2>
-                    <p class="discount__description">Cada cliente é único, e cada celular conta uma história.</p>
-                    <a href="#" class="button button--flex">
-                        <i class="ri-shopping-bag-line button__icon"></i> Somos a escolha certa
-                    </a>
-                </div>
-
-                <img src="assets/img/discount.png" alt="" class="discount__img">
-            </div>
-        </section>
-
-        <!--=============== PRODUCTS ===============-->
-        <!-- <section class="products section" id="products">
-            <h2 class="section__title section__title-gradient products__line">
-                Choose <br> Your Style
-            </h2>
-
-            <div class="products__container container grid">
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/product1.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Black</h3>
-                        <span class="products__price">$249</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/product2.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Red Black</h3>
-                        <span class="products__price">$249</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/product3.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Night Black</h3>
-                        <span class="products__price">$249</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/product4.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Blue</h3>
-                        <span class="products__price">$249</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-
-                <article class="products__card">
-                    <div class="products__content">
-                        <img src="assets/img/product5.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Twilight gray</h3>
-                        <span class="products__price">$249</span>
-
-                        <button class="button button--flex products__button">
-                            <i class="ri-shopping-bag-line button__icon"></i>
-                        </button>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main> -->
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <a href="#" class="footer__logo">
-                <img src="assets/img/logo.png" alt="">
-            </a>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Produtos</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Carregadores</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Peliculas</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Capinhas</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Outros acessórios</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Serviços</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Conserto de celular</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Conserto de Notebook</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Conserto de desktop</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Entrega em Domicílio</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <form action="" class="footer__form">
-                    <input type="email" placeholder="Email" class="footer__input">
-                    <button class="button button--flex">
-                        <i class="ri-send-plane-line button__icon"></i> Subscribe
-                    </button>
-                </form>
-
-                <div class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/connectphone0/" target="_blank" class="footer__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=5584998071881&text=Ol%C3%A1,%0AEstou%20enfrentando%20um%20problema%20com%20meu%20celular%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20conserto." target="_blank" class="footer__social-link">
-                        <i class="ri-whatsapp-line icons8-whatsapp-48.png"></i>
-                    </a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h1>Reparo de Smartphones com <span class="typewrite" data-period="2000"
+                        data-type='["Qualidade", "Tecnologia", "Garantia", "Agilidade"]'></span></h1>
+                <p>Na ConnectPhone, oferecemos soluções completas para seu dispositivo com peças originais e técnicos
+                    especializados.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Agendar Serviço</a>
+                    <a href="https://api.whatsapp.com/send?phone=5584998071881&text=Ol%C3%A1,%0AEstou%20enfrentando%20um%20problema%20com%20meu%20celular%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20conserto."
+                        class="btn btn-emergency"><i class="fab fa-whatsapp"></i> Urgência?</a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <p class="footer__copy">
-            <a href="" target="_blank" class="footer__copy-link">&#169; ConnectPhone.</a>
-        </p>
+    <!-- Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title animate__animated animate__fadeIn">
+                <h2>Nossos <span>Serviços</span></h2>
+                <p>Soluções completas para todos os modelos de smartphones com garantia e qualidade</p>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Reparo de Placas</h3>
+                    <p>Diagnóstico e reparo profissional de problemas na placa-mãe com equipamentos de precisão.</p>
+                    <div class="price">A partir de R$ 150</div>
+                </div>
+
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-screen"></i>
+                    </div>
+                    <h3>Troca de Telas</h3>
+                    <p>Substituição de telas quebradas com peças originais ou de alta qualidade.</p>
+                    <div class="price">A partir de R$ 200</div>
+                </div>
+
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+                    <div class="service-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Troca de Bateria</h3>
+                    <p>Baterias novas com maior durabilidade para seu smartphone.</p>
+                    <div class="price">A partir de R$ 120</div>
+                </div>
+
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Reparo de Software</h3>
+                    <p>Formatação, atualização, desbloqueio e recuperação de dados.</p>
+                    <div class="price">A partir de R$ 80</div>
+                </div>
+
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Manutenção Geral</h3>
+                    <p>Conserto de microfones, alto-falantes, conectores e outros componentes.</p>
+                    <div class="price">A partir de R$ 100</div>
+                </div>
+
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Prevenção</h3>
+                    <p>Limpeza interna, troca de películas e cases protetores.</p>
+                    <div class="price">A partir de R$ 50</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image animate__animated animate__fadeInLeft">
+                    <img src="https://images.unsplash.com/photo-1581093450025-4c357cce1b5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Técnico trabalhando">
+                </div>
+                <div class="about-text animate__animated animate__fadeInRight">
+                    <h3>Expertise em Reparos desde 2015</h3>
+                    <p>Na ConnectPhone, combinamos tecnologia avançada com experiência para oferecer o melhor serviço de
+                        reparo de smartphones da região. Nossos técnicos são certificados e atualizados com as últimas
+                        técnicas do mercado.</p>
+                    <p>Investimos constantemente em equipamentos de última geração para garantir reparos precisos em
+                        todos os modelos, desde os mais antigos até os lançamentos mais recentes.</p>
+                    <p>Todos os nossos serviços possuem garantia e nosso objetivo é resolver seu problema na primeira
+                        tentativa, economizando seu tempo e dinheiro.</p>
+                    <a href="#contact" class="btn btn-primary" style="display: inline-flex; margin-top: 20px;"><i
+                            class="fas fa-phone-alt"></i> Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Por que Escolher a <span>ConnectPhone?</span></h2>
+                <p>Nossos diferenciais que fazem a diferença para você</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card animate__animated animate__fadeIn" style="animation-delay: 0.1s;">
+                    <i class="fas fa-clock floating"></i>
+                    <h3>Rapidez</h3>
+                    <p>70% dos reparos são concluídos no mesmo dia, sem comprometer a qualidade.</p>
+                </div>
+
+                <div class="benefit-card animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                    <i class="fas fa-certificate floating"></i>
+                    <h3>Garantia</h3>
+                    <p>Todos os serviços possuem garantia de 3 meses contra defeitos de mão de obra.</p>
+                </div>
+
+                <div class="benefit-card animate__animated animate__fadeIn" style="animation-delay: 0.3s;">
+                    <i class="fas fa-dollar-sign floating"></i>
+                    <h3>Preço Justo</h3>
+                    <p>Orçamento gratuito e preços competitivos com parcelamento em até 3x sem juros.</p>
+                </div>
+
+                <div class="benefit-card animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                    <i class="fas fa-shield-alt floating"></i>
+                    <h3>Peças Originais</h3>
+                    <p>Utilizamos componentes originais ou de fabricantes homologados.</p>
+                </div>
+
+                <div class="benefit-card animate__animated animate__fadeIn" style="animation-delay: 0.5s;">
+                    <i class="fas fa-user-tie floating"></i>
+                    <h3>Profissionais Certificados</h3>
+                    <p>Técnicos altamente especializados e capacitados para atuar com diversas marcas do mercado.</p>
+                </div>
+
+                <div class="benefit-card animate__animated animate__fadeIn" style="animation-delay: 0.6s;">
+                    <i class="fas fa-lock floating"></i>
+                    <h3>Segurança de Dados</h3>
+                    <p>Procedimentos que protegem suas informações durante o reparo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>O que Nossos <span>Clientes</span> Dizem</h2>
+                <p>Avaliações reais de quem já utilizou nossos serviços</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+                    <div class="testimonial-text">
+                        Levei meu celular com problema na placa e fui muito bem atendido. O técnico explicou
+                        detalhadamente o problema e o conserto foi rápido. Recomendo!
+                    </div>
+                    <div class="testimonial-author">Carlos Silva</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="testimonial-text">
+                        Troquei a tela do meu iPhone e ficou perfeito, igual novo! Atendimento excelente e preço justo.
+                        Voltarei sempre que precisar.
+                    </div>
+                    <div class="testimonial-author">Ana Oliveira</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+                    <div class="testimonial-text">
+                        Meu celular não ligava mais e conseguiram recuperar todos meus dados importantes. Profissionais
+                        muito competentes e honestos.
+                    </div>
+                    <div class="testimonial-author">Roberto Santos</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-form animate__animated animate__fadeInLeft">
+                    <h3><i class="fas fa-envelope-open-text"></i> Fale Conosco</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="phone" placeholder="(XX) XXXXX-XXXX" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Serviço Desejado</label>
+                            <i class="fas fa-tools"></i>
+                            <select id="service">
+                                <option value="">Selecione um serviço</option>
+                                <option value="screen">Troca de Tela</option>
+                                <option value="battery">Troca de Bateria</option>
+                                <option value="board">Reparo de Placa</option>
+                                <option value="software">Reparo de Software</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <i class="fas fa-comment"></i>
+                            <textarea id="message" placeholder="Descreva o problema do seu dispositivo"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Enviar
+                            Mensagem</button>
+                    </form>
+                </div>
+
+                <div class="contact-info animate__animated animate__fadeInRight">
+                    <h3>Informações de Contato</h3>
+
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt floating"></i>
+                        <div class="info-text">
+                            <h4>Endereço</h4>
+                            <p>Rua tenente Aurélio, centro (largo do mercado velho), Parnamirim, Rio Grande do Norte</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt floating"></i>
+                        <div class="info-text">
+                            <h4>Telefone</h4>
+                            <p>(84) 9 9807 - 1881</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fab fa-whatsapp floating"></i>
+                        <div class="info-text">
+                            <h4>WhatsApp</h4>
+                            <p>(84) 9 9807 - 1881</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-envelope floating"></i>
+                        <div class="info-text">
+                            <h4>E-mail</h4>
+                            <p>contato@connectphone.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-clock floating"></i>
+                        <div class="info-text">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 8h às 17h</p>
+                            <p>Sábado: 8h às 13h</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/connectphone0/"><i class="fab fa-instagram"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5584998071881&text=Ol%C3%A1,%0AEstou%20enfrentando%20um%20problema%20com%20meu%20celular%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20conserto."><i
+                                class="fab fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>ConnectPhone</h4>
+                    <p>Especialistas em reparos de smartphones com qualidade, rapidez e garantia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/connectphone0/"><i class="fab fa-instagram"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5584998071881&text=Ol%C3%A1,%0AEstou%20enfrentando%20um%20problema%20com%20meu%20celular%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20conserto."><i
+                                class="fab fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#testimonials">Avaliações</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Reparo de Placas</a></li>
+                        <li><a href="#">Troca de Telas</a></li>
+                        <li><a href="#">Troca de Bateria</a></li>
+                        <li><a href="#">Reparo de Software</a></li>
+                        <li><a href="#">Recuperação de Dados</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> (84) 9 9807 - 1881</li>
+                        <li><i class="fab fa-whatsapp"></i> (84) 9 9807 - 1881</li>
+                        <li><i class="fas fa-envelope"></i> contato@connectphone.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua tenente Aurélio, centro (largo do mercado velho),
+                            Parnamirim, Rio Grande do Norte</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 ConnectPhone - Todos os direitos reservados. CNPJ: 40.407.141/0001 - 48</p>
+            </div>
+        </div>
     </footer>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-s-line scrollup__icon"></i>
-    </a>
-
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=============== MAIN JS ===============-->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
